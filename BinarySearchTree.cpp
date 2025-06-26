@@ -90,4 +90,46 @@ class BinaryTree
             currentNode = currentNode->rigthchild;
         }
     }
-}
+
+    public :
+    bool isEmpty()
+    {
+    return ROOT == nullptr;
+    }
+
+    void inorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        inorder(ptr->leftchild);
+        cout << ptr->info << " "; 
+        inorder(ptr->rigthchild);
+    }
+    void preorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        cout << ptr->info << " "; 
+        preorder(ptr->leftchild);
+        inorder(ptr->rigthchild);
+    }
+    void postorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+        return;
+        postorder(ptr->leftchild);
+        inorder(ptr->rigthchild);
+        cout << ptr->info << " "; 
+    }
+};
