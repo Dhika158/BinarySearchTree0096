@@ -14,3 +14,9 @@ class Node
         rigthchild = nullptr; // Initialize rigth child to null
     }
 };
+
+class BinaryTree
+{
+    public:
+    Node *ROOT;
+}
