@@ -69,6 +69,7 @@ class BinaryTree
         else if (x > parent->info)
         {
         // 7a: Make the rigth child of parent point to the new node 
+        parent->rigthchild = newNode;
         }
     }
 }
