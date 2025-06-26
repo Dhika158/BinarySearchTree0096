@@ -75,4 +75,9 @@ class BinaryTree
         return;
         }
     }
+
+    void search(int element, Node *&parent, Node *&currentNode)
+    {
+        // this function searches the currentNode of the specified Node as well as the current Node of the is parent
+    }
 }
