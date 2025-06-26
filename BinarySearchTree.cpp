@@ -70,6 +70,9 @@ class BinaryTree
         {
         // 7a: Make the rigth child of parent point to the new node 
         parent->rigthchild = newNode;
+
+        // 7b: Exit
+        return;
         }
     }
 }
